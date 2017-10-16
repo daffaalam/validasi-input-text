@@ -122,6 +122,10 @@ public class main extends AppCompatActivity {
         } else if (!bmail.getText().toString().isEmpty() && btlpn.getText().toString().isEmpty()) {
             btlpn.setError("Nomor Telephone harus isi.");
             btlpn.requestFocus();
+        } else if (!Patterns.PHONE.matcher(btlpn.getText().toString()).matches()) {
+            btlpn.setError("Nomor tidak valid!");
+            btlpn.setText("");
+            btlpn.requestFocus();
         } else if (!btlpn.getText().toString().isEmpty() && balmt.getText().toString().isEmpty()) {
             balmt.setError("Alamat harus isi.");
             balmt.requestFocus();
@@ -136,6 +140,7 @@ public class main extends AppCompatActivity {
                 AlertDialog.Builder alrtdata = new AlertDialog.Builder(this);
 
                 alrtdata
+                        .setIcon(R.mipmap.ic_launcher_round)
                         .setTitle("Your Biodata.")
                         .setMessage(
                                 "Nama : " + bnmlngkp.getText().toString() +
@@ -157,6 +162,12 @@ public class main extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 bnmlngkp.requestFocus();
+                            }
+                        })
+                        .setNeutralButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
                             }
                         });
                 AlertDialog alrtdial = alrtdata.create();
