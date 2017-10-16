@@ -141,7 +141,7 @@ public class main extends AppCompatActivity {
 
                 alrtdata
                         .setIcon(R.mipmap.ic_launcher_round)
-                        .setTitle("Your Biodata.")
+                        .setTitle("BIODATA ANDA")
                         .setMessage(
                                 "Nama : " + bnmlngkp.getText().toString() +
                                         "\nUsername : " + busrnm.getText().toString() +
@@ -164,6 +164,7 @@ public class main extends AppCompatActivity {
                                 bnmlngkp.requestFocus();
                             }
                         })
+
                         .setNeutralButton("Cancel", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
