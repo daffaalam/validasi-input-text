@@ -17,7 +17,7 @@ public class main extends AppCompatActivity {
     //Step 1 - Declare
     EditText bnmlngkp, busrnm, bmail, btlpn, balmt, blhr;
     RadioButton jrpl, jtkj, jtkr, jtabo;
-    Button btcek, btsdint, btsdbdl;
+    Button btcek;
 
     //Step 2 - Declare hasil PilihJurusan
     String pljrsn;
@@ -39,8 +39,6 @@ public class main extends AppCompatActivity {
         jtkr = (RadioButton) findViewById(R.id.tkr);
         jtabo = (RadioButton) findViewById(R.id.tabo);
         btcek = (Button) findViewById(R.id.cek);
-        btsdint = (Button) findViewById(R.id.sdint);
-        btsdbdl = (Button) findViewById(R.id.sdbdl);
 
         //Step 4 - Membuat aksi button check
         btcek.setOnClickListener(new View.OnClickListener() {
@@ -49,21 +47,6 @@ public class main extends AppCompatActivity {
                 biodata();
             }
         });
-
-//        btsdint.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//            }
-//        });
-
-        btsdbdl.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                sndata();
-            }
-        });
-
     }
 
     //Step 5 - Membuat methode aksi pilih jurusan radio button
@@ -98,12 +81,14 @@ public class main extends AppCompatActivity {
 
 //        String mailvld = bmail.getText().toString();
 
-        // if (bnmlngkp.getText().toString().isEmpty()) - Jika EditText bnmlngkp masih kosong
-        // bnmlngkp.setError("Nama harus isi."); - maka akan tampil pesan error pd EditText tersebut
-        // bnmlngkp.requestFocus(); - kemudian Kursor akan meminta fokus ke Edittext tersebut
-        // !bnmlngkp.getText().toString().isEmpty() - lalu di else if jika bnmlngkp sudah terisi / tidak kosong
-        // && - pengganti 'dan' dalam AndroidStudio
-        // busrnm.getText().toString().isEmpty() - jadi jika bnmlngkp sudah terisi dan/tapi busrnm masih kosong maka akan menampilkan error pd EditText busrnm
+        /*
+        if (bnmlngkp.getText().toString().isEmpty()) - Jika EditText bnmlngkp masih kosong
+        bnmlngkp.setError("Nama harus isi."); - maka akan tampil pesan error pd EditText tersebut
+        bnmlngkp.requestFocus(); - kemudian Kursor akan meminta fokus ke Edittext tersebut
+        !bnmlngkp.getText().toString().isEmpty() - lalu di else if jika bnmlngkp sudah terisi / tidak kosong
+        && - pengganti 'dan' dalam AndroidStudio
+        busrnm.getText().toString().isEmpty() - jadi jika bnmlngkp sudah terisi dan/tapi busrnm masih kosong maka akan menampilkan error pd EditText busrnm
+        */
 
         if (bnmlngkp.getText().toString().isEmpty()) {
             bnmlngkp.setError("Nama harus isi.");

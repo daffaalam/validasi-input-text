@@ -20,49 +20,56 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:text="Input Biodata :" />
+                android:text="Input Biodata :"
+                tools:ignore="HardcodedText" />
 
             <EditText
                 android:id="@+id/nmlngkp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nama Lengkap"
-                android:inputType="text" />
+                android:inputType="text"
+                tools:ignore="HardcodedText" />
 
             <EditText
                 android:id="@+id/usrnm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Username"
-                android:inputType="none" />
+                android:inputType="none"
+                tools:ignore="HardcodedText" />
 
             <EditText
                 android:id="@+id/mail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                tools:ignore="HardcodedText" />
 
             <EditText
                 android:id="@+id/tlpn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Phone"
-                android:inputType="phone" />
+                android:inputType="phone"
+                tools:ignore="HardcodedText" />
 
             <EditText
                 android:id="@+id/almt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Address"
-                android:inputType="text" />
+                android:inputType="text"
+                tools:ignore="HardcodedText" />
 
             <EditText
                 android:id="@+id/lhr"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Birth"
-                android:inputType="date" />
+                android:inputType="date"
+                tools:ignore="HardcodedText" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -73,61 +80,46 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:text="Pilih Jurusan :" />
+                    android:text="Pilih Jurusan :"
+                    tools:ignore="HardcodedText" />
 
                 <RadioButton
                     android:id="@+id/rpl"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rekayasa Perangkat Lunak (RPL)" />
+                    android:text="Rekayasa Perangkat Lunak (RPL)"
+                    tools:ignore="HardcodedText" />
 
                 <RadioButton
                     android:id="@+id/tkj"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tehnik Komputer Jaringan (TKJ)" />
+                    android:text="Tehnik Komputer Jaringan (TKJ)"
+                    tools:ignore="HardcodedText" />
 
                 <RadioButton
                     android:id="@+id/tkr"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tehnik Kendaraan Ringan (TKR)" />
+                    android:text="Tehnik Kendaraan Ringan (TKR)"
+                    tools:ignore="HardcodedText" />
 
                 <RadioButton
                     android:id="@+id/tabo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tata Boga" />
+                    android:text="Tata Boga"
+                    tools:ignore="HardcodedText" />
 
             </RadioGroup>
 
-            <LinearLayout
+            <Button
+                android:id="@+id/cek"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp">
-
-                <Button
-                    android:id="@+id/cek"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Checked" />
-
-                <Button
-                    android:id="@+id/sdint"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Send (Int)" />
-
-                <Button
-                    android:id="@+id/sdbdl"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Send (Bdl)" />
-
-            </LinearLayout>
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:text="Checked"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
 
